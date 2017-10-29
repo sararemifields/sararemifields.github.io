@@ -17,7 +17,7 @@ function order(pack, flav1, flav2, flav3, amount, price) {
     this.amount = amount;
     this.price = price;
 }
-
+// Document ready
 $(document).ready(function() {
     
     if (localStorage.length == 0){
@@ -86,8 +86,9 @@ $(document).ready(function() {
         $("#var-num1").removeClass("selectedbuttons");
         order.amount = amount[2];
     });
-
     
+    
+    //This function goes through all of the flavor buttons to see if they've been clicked and to make sure no more than 3 are clicked
     function countFlavor(flavor, i) {
         $(flavor).click(function() {
             if (counter < 3) {
@@ -120,7 +121,7 @@ $(document).ready(function() {
         })
     }
 
-
+    //this function checks each flavor (all 15)
     function trackFlavors() {
         for (var i = 0; i < 15; i++) {
             countFlavor('#var-flavors' + String(i), i);

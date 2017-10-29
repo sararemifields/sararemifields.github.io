@@ -49,7 +49,7 @@ $(document).ready(function() {
             assignButtonId();
         }
     
-        //This 
+        //This function is assigning IDs to the removebuttons and the shoppingcarts that are related ot each order
         function assignButtonId() {
             for(var i = 1; i < buttons.length; i++) {
                 $(buttons[i]).attr('id', 'removebutton'+ String(i));
@@ -60,13 +60,14 @@ $(document).ready(function() {
             
         }
     
+        //This function checks which removebuttons were clicked and then calls the removeOrder function on this specific order
         function checkClick() {
               $(buttons).click( function() {
-                console.log("hey", $(this));
                 removeOrder($(this));
               });
         }
     
+        //This function removes the order that correlates with the number of the removebutton
         function removeOrder(orderButton) {
                 var getId = $(orderButton).attr("id");
                 var stringofGetID = String(getId);
@@ -83,7 +84,7 @@ $(document).ready(function() {
 
     
         
-    
+        //Calling my functions
         gettingLocalStorage();
         loadCurrentOrders();
         checkClick();
