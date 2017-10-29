@@ -1,0 +1,494 @@
+@font-face {
+    font-family: ApercuRegular;
+    src: url("fonts/ApercuPro-Regular.otf");
+}
+
+@font-face {
+    font-family: ApercuBold;
+    src: url("fonts/ApercuPro-Bold.otf");
+}
+
+@font-face {
+    font-family: ApercuRegItalic;
+    src: url("fonts/ApercuPro-RegularItalic.otf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    
+}
+
+/*getting rid of exisiting css around links*/
+a {
+    text-decoration: none;
+}
+
+
+/*all code below regards to my top navigation bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(252,242,242,1);
+}
+
+li {
+    float: right;
+}
+
+li img {
+    width: 5%;
+    height: auto;
+}
+
+li a, navDesign {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: ApercuRegular;
+    font-size: 14px;
+}
+
+/*setting up the logo in the navigation bar*/
+
+.logo{
+    float: left; 
+}
+
+.logo a{
+    float: left;
+    font-family: ApercuBold;
+    font-size: 14px;
+    background-color: #f2c0c0;
+    
+}
+
+/*setting up the active links in the navigation*/
+
+li a:hover:not(.active) {
+    background-color: #f2c0c0;
+}
+
+ol {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    background-color: #f4d4d4;;
+}
+
+/*defining text styles I use throughout the website*/
+
+h1{
+    font-family: ApercuBold;
+    line-height: 1.4em;
+    padding-top: 1em;
+    padding-left: 40px;
+    margin: 0;
+    font-size: 26px;
+    text-decoration: none;
+    color: #f2c0c0; 
+}
+
+ h2{
+    font-family: ApercuBold;
+    line-height: 1.4em;
+    padding-top: 1em;
+    padding-left: 40px;
+    margin: 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000; 
+}
+
+p {
+    font-family: ApercuRegular;
+    line-height: 1.4em;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000; 
+}
+
+/*below is for the title that goes under my logo on the home page*/
+
+#title{
+    font-family: ApercuBold;
+    line-height: 1.4em;
+    margin: 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: #f2c0c0; 
+}
+
+/*setting up the large logo in the middle of the home page*/
+
+.biglogo {
+    display: block;
+    margin: 0 auto;  
+    width: 10%;
+    margin-top: 3%;
+}
+
+.biglogo img {
+    align-content: center;
+    height: auto;
+}
+
+/*creating the grid seen on the home page of two images and the text and button that leads to the flavors page*/
+
+.grid {
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: 33.4% 33.4% 33.4%;
+    grid-gap: 0px;
+    border: none;   
+}
+
+.subgrid p {
+    color: #000;
+    text-align: center;
+    padding: 25% 16px 20px 16px;
+    text-decoration: none;
+    font-family: ApercuBold;
+    font-size: 20px;
+    line-height: 1.3em;
+    
+}
+
+#pinkbackground {
+    background-color: rgba(252,242,242,1);
+    height: 99.2%;
+}
+
+.subgrid img{
+    width: 100%;
+}
+
+/*setting up buttons that are seen on several pages*/
+
+button {
+    text-align: center;
+    font-family: ApercuRegular;
+    font-size: 14px;
+    color: #fff;
+    background-color: #f2c0c0;
+    border: none;
+    padding : 15px 75px 14px 75px;
+    margin  : 5px auto;
+    text-decoration: none;
+    display : block;
+}
+
+button:hover {
+    background-color: #000;
+    
+}
+
+/*setting up buttons for ordering on product pages and the remove button on the cart page*/
+
+.amountbuttons {
+    padding-left: 40px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.amountbuttons button:hover{
+    background-color: #f2c0c0;
+}
+
+.removebuttons{
+    color: #000;
+/*    height: 60px;*/
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 170px;
+    margin-top: -5px;
+    padding: 12px 0 12px 0;
+}
+
+.unselectedbuttons{
+    color: #000;
+/*    height: 60px;*/
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 12px 6px 0 0;
+    width: 170px;
+    padding: 12px 0 12px 0;
+}
+
+.selectedbuttons{
+    color: #ccc;
+/*    height: 60px;*/
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 12px 6px 0 0;
+    width: 170px;
+    padding: 12px 0 12px 0;
+}
+
+.error {
+    font-family: ApercuBold;
+    line-height: 1.0em;
+    padding-left: 40px;
+    margin: 0;
+    font-size: 13px;
+    text-decoration: none;
+    color: #ff0000; 
+    padding-top: 20px;
+}
+
+
+/*creating the checkout button on products pages*/
+
+
+#checkout {
+    background-color: #000; 
+    color: #fff;
+}
+
+#checkout:hover{
+    background-color: #555;
+    color: #fff;
+}
+
+/*styling the text on top of the browsing flavors page*/
+
+.flavorsinfo{
+    padding-top: 3%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.browsing {
+    margin: 3%;
+    height: auto;
+}
+
+/*styling the grid of flavors as well as their names on the browsing page*/
+
+.items img {
+    width: 100%;
+    height: auto;
+}
+
+.caption{
+    padding: 15px;
+    text-align: center;
+    font-family: ApercuBold;
+    line-height: 1.4em;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000; 
+}
+
+.caption a {
+    padding: 15px;
+    text-align: center;
+    font-family: ApercuBold;
+    line-height: 1.4em;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #000;
+}
+
+
+.caption:hover, .caption a:hover{
+    color: #f2c0c0;
+}
+
+.gallery {
+    padding: 0 6px;
+    float: left;
+    width: 18.99999%;
+}
+
+
+/*setting up the text for the products that will go alongside the image of the product*/
+
+.productDetails {
+    display: block;
+    margin: 3%;
+}
+
+.productDetailsInfo {
+    float: left;
+    width: 50%;
+}
+
+.productDetailsInfo h2{
+    font-family: ApercuBold;
+    padding-top: 20px;
+    line-height: 1.3em;
+    padding-left: 40px;
+    margin: 0;
+    font-size: 26px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.productDetailsInfo h3{
+    font-family: ApercuRegItalic;
+    line-height: 1.0em;
+    padding-left: 40px;
+    margin: 0;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000; 
+}
+
+.productCaption{
+    font-family: ApercuBold;
+    line-height: 1.0em;
+    padding-left: 40px;
+    margin: 0;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000; 
+    padding-top: 20px;
+}
+
+.productDetailsInfo h5{
+    font-family: ApercuRegular;
+    line-height: 1.0em;
+/*    padding-left: 40px;*/
+    margin: 0;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000; 
+    padding-top: 2px;
+}
+
+/*setting up the image that shows the product and that will change as the user selects different combinations of order buttons*/
+
+.productDetailsInfo img{
+    width: 100%;
+}
+
+/*creating breadcrumbs for the product pages so the user can easily go back if they are confused*/
+
+.breadcrumbs {
+    margin: 3%;
+}
+
+.breadcrumbs a{
+    font-family: ApercuBold;
+    padding-top: 20px;
+    line-height: 1.3em;
+    margin: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: #666;
+}
+
+/*styling shoppingcart and wishlist divs*/
+
+.shoppingCart {
+    margin:3% 9% 1% 9%;
+    position: relative;
+    float: left;
+    border: 1px solid #000;
+    background-color: rgba(252,242,242,1);
+}
+
+/*styling the footer of the index page*/
+
+.checkoutImage {
+    margin: 3%;
+    width: 50%;
+    height: auto;
+    float: left;
+    border: 1px solid #000;
+}
+
+/*styling the shopping cart on the cart page*/
+
+.cartinfo{
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+.shoppingCart h2{
+    font-family: ApercuBold;
+    line-height: 1.4em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 40px;
+    margin: 0;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000; 
+    border-bottom: 1px solid #000;
+}
+
+.shoppingCart ol{
+    margin: 3%;
+    margin-left: 40%;
+    list-style-type:none
+}
+
+
+.shoppingCart li{
+    font-family: ApercuRegular;
+    line-height: 1.0em;
+    padding-bottom: 1em;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000; 
+    padding-top: 1.5px;
+    float: none;
+}
+
+#currentPack, #currentFlavors, #currentAmount {
+    font-family: ApercuBold;
+    line-height: 1.0em;
+    padding-bottom: 1em;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000; 
+    padding-top: 2px;
+    float: none; 
+}
+
+#currentPrice{
+    font-family: ApercuBold;
+    line-height: 1.0em;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000; 
+    padding-top: .6em;
+    float: none;
+}
+/*footer styling below*/
+
+footer {
+    display: inline-block;
+    width: 40%
+    float: left;
+    position: relative;
+    margin: 3%;
+}
+
+footer p{
+    display: block;
+    font-family: ApercuRegular;
+    line-height: 1.6em;
+    padding-top: 1em;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000000;  
+    position: relative;
+}

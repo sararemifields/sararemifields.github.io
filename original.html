@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<!--placing the javascript links as well as the css link in the head-->
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="main.js" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<!--creating the top bar navigation-->
+        <nav>
+            <ul>
+              <li><a href="" id="cartAmount" class="navDesign">Cart (0)</a></li>
+              <li><a href="browsing.html">Flavors</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li class="logo"><a href="index.html">Bun Bun Bake Shop</a></li>
+            </ul>
+        </nav>
+<!--creating breadcrumbs so the user knows where they are on the website-->
+        <div class="breadcrumbs">
+            <a href="browsing.html">Flavors</a> > <a href="original.html">Original</a>
+        </div>
+        <div class="productDetails">
+            <div class="productDetailsInfo">
+<!--here is where I am putting the picture of how many buns they have-->
+                <img id="originalbun" src="images/org1.png">
+            </div>
+<!--below are details about the product, which will update based on what the user selects-->
+            <div class="productDetailsInfo">
+                <h1>Original Bun</h1>
+                <ol class="detailOfProduct">
+                <p>
+                Our famous original bun! You can choose a 3-pack, a 6-pack, or a 12-pack of our delicious buns, and add up to 2 more flavors along with the original!</p></ol>
+<!--here is where I set up the 3 buttons to choose how many buns the user wants-->
+                <h4 id="orderdetails" class="productCaption">Amount of Buns:</h4>
+                <div class="amountbuttons">
+                    <button id="var-packs0" class="unselectedbuttons"></button>
+                    <button id="var-packs1" class="unselectedbuttons"></button>
+                    <button id="var-packs2" class="unselectedbuttons"></button>
+                </div>
+<!--here is where the user can choose up to 3 flavors to be in the pack-->
+                <h4 id="flavorchoice" class="productCaption">Flavors (Choose up to 3): Original</h4>
+                <div class="amountbuttons">
+                    <button id="var-flavors0" class="selectedbuttons"></button>
+                    <button id="var-flavors1" class="unselectedbuttons"></button>
+                    <button id="var-flavors2" class="unselectedbuttons"></button>
+                    <button id="var-flavors3" class="unselectedbuttons"></button>
+                    <button id="var-flavors4" class="unselectedbuttons"></button>
+                    <button id="var-flavors5" class="unselectedbuttons"></button>
+                    <button id="var-flavors6" class="unselectedbuttons"></button>
+                    <button id="var-flavors7" class="unselectedbuttons"></button>
+                    <button id="var-flavors8" class="unselectedbuttons"></button>
+                    <button id="var-flavors9" class="unselectedbuttons"></button>
+                    <button id="var-flavors10" class="unselectedbuttons"></button>
+                    <button id="var-flavors11" class="unselectedbuttons"></button>
+                    <button id="var-flavors12" class="unselectedbuttons"></button>
+                    <button id="var-flavors13" class="unselectedbuttons"></button>
+                    <button id="var-flavors14" class="unselectedbuttons"></button>
+                </div>
+<!--here the user can increase how many of this order they want-->
+                <h4 id="numoforders" class="productCaption">Number of Orders:</h4>
+                <div class="amountbuttons">
+                    <button id="var-num0" class="unselectedbuttons"></button>
+                    <button id="var-num1" class="unselectedbuttons"></button>
+                    <button id="var-num2" class="unselectedbuttons"></button>
+                </div>
+<!--the price updates based on how many buns the user clicked to order-->
+                <h2 id="price">Total Price: $0.00</h2>
+                <div class="amountbuttons">
+                    <button id="checkout" class="unselectedbuttons">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

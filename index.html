@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   
+<!--    Below is the link to my stylesheet for this page-->
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main.js" type="text/javascript"></script>
+    </head>
+    <body>
+<!--        Below is the top bar navigation for my site-->
+        <nav>
+            <ul>
+              <li><a href="cart.html">Cart (0)</a></li>
+              <li><a href="browsing.html">Flavors</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li class="logo"><a href="index.html">Bun Bun Bake Shop</a></li>
+            </ul>
+        </nav>
+<!--        Below is the logo that is seen in the middle of the page (the bun)-->
+        <div class="biglogo">
+            <img src="images/logo-01.svg">
+            <h1 id="title">Bun Bun!</h1>
+        </div>
+<!--Below I define a class called grid that I make a 3 column grid within-->
+        <div class="grid">
+<!--           This is the first cell of my grid which hosts a picture of a bun-->
+            <div class="subgrid">
+                <img src="images/2.jpg">
+            </div>
+<!--            This is the second "cell" of my grid, and it has the welcome text as well as a button that leads to the flavors page-->
+            <div class="subgrid" id="pinkbackground">
+                   <p>We are a small bakery that specializes in cinnamon rolls, from our famous classic cinnamon roll to a variety of artisan flavors. Our shop is located in Pittsburgh, PA, but we ship fresh rolls to anywhere in the USA.</p>
+<!--            This is the button to get to the flavors page-->
+                   <a href="browsing.html"><button>View Flavors!</button></a>
+            </div>
+<!--            This is the third "cell" of my grid and like the first, it has an image about my shpo-->
+            <div class="subgrid">
+                <img src="images/3.jpg">
+            </div>
+        </div>
+<!--        Lastly, this is the footer of my page where the user can find contact information about the shop-->
+        <footer>
+                <p>
+                Bun Bun Bake Shop<br>
+                123 Sweet Street, Pittsburgh PA 15232<br>
+                412-123-4567
+                </p>
+        </footer>
+    </body>
+</html>

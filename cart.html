@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<!--placing the javascript links as well as the css link in the head-->
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="cart.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>      
+<!--creating the top bar navigation-->
+        <nav>
+            <ul>
+              <li><a href="cart.html" id="cartAmount" class="active">Cart (0)</a></li>
+              <li><a href="browsing.html">Flavors</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li class="logo"><a href="index.html">Bun Bun Bake Shop</a></li>
+            </ul>
+        </nav>
+        <div class="cartinfo">
+            <h1>Shopping Cart</h1>
+            <br>
+            <div class="amountbuttons">
+                <a href="original.html"><button class="removebuttons">Add Another Order!</button></a>
+            </div>
+        </div>
+<!--All of the code from cart.js is added here, which allows me to populate the orders that the user put in-->
+        <div id="allOrders">
+        </div>
+    </body>
+
+</html>
